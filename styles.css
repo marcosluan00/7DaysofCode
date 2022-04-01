@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    height: 80px;
+    width: 100vw;
+    position: sticky;
+    top: 0;   
+}
+#logo a{
+    color:#3A404E;
+    font-weight: bolder;
+}
+#navBar{
+    margin: 20px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+}
+header a {
+    text-decoration: none;
+    color:#667085;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+#paginas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    margin-right: 150px;
+}
+#paginas a{
+    margin: 0px 10px;
+}
+#botoes{
+    margin: 0px 5px;
+}
+#cadastrar {
+    height: 40px;
+    width:  110px;
+    color: #fff;
+    background: #8E2424;
+    border: 1px solid #8E2424;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 10px;
+}
