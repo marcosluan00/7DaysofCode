@@ -12,9 +12,7 @@
 }
 header {
     height: 80px;
-    width: 100vw;
-    position: sticky;
-    top: 0;   
+    width: 100%;
 }
 #logo a{
     color:#3A404E;
@@ -40,7 +38,6 @@ header a {
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    margin-right: 150px;
 }
 #paginas a{
     margin: 0px 10px;
@@ -62,10 +59,14 @@ header a {
     margin: 0 10px;
 }
 main{
+    padding: 0px 25px
+    
+}
+.cabecalho{
     text-align: center;
 }
 #sobre{
-    font-size:16px;
+    font-size:24px;
     line-height: 24px;
     color: var(--main-color);
     font-weight: bold;
@@ -76,7 +77,97 @@ main{
     line-height: 60px;
 }
 #descricao{
-    width: 50%;
+    width: 45%;
     margin: 10px auto;
     line-height: 30px;
+}
+.metricas-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px auto;
+}
+.metricas{
+    width:24%;
+    padding: 10px 30px;
+}
+.metricas span{
+    color: var(--main-color);
+    font-weight:bold;
+    font-size: 55px;
+    line-height: 72px;
+}
+.metricas h4 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+.metricas p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+    letter-spacing: -0.02em;
+}
+.vagas {
+    text-align: center;
+}
+.vagas img {
+    height: 300px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);
+    margin: 10px;
+}
+#aviso {
+    color: var(--main-color);
+    background: rgba(142, 36, 36, 0.07);
+    padding: 4px 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.vagas h3 {
+    margin: 20px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.01em;
+}
+.vagas p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--text-color);
+    margin: 10px 0 40px;
+}
+.vagas h4{
+    text-align:left;
+    margin: 30px 25%;
+}
+.desc-vagas{
+    border: 1px solid #eaecf0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px 25%;
+    text-align: left;
+    padding: 15px;
+    border-radius: 16px
+}
+.titulo-vaga{
+    color: #101828;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.subtitulo-vaga{
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 24px;
+}
+.desc-vagas:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    
 }
