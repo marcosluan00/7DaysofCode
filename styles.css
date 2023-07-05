@@ -9,23 +9,27 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    background-color: #ffffffce;
 }
 header {
-    height: 80px;
+    height: 50px;
     width: 100%;
+    border-bottom: 1px solid #8E2424;
+    margin-bottom: 10px;
 }
 #logo a{
     color:#3A404E;
     font-weight: bolder;
 }
 #navBar{
-    margin: 20px 60px;
+    margin: 20px 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-size: 1.3rem;
 }
+
 header a {
     text-decoration: none;
     color: var(--text-color);
@@ -33,6 +37,11 @@ header a {
     font-size: 18px;
     line-height: 24px;
 }
+
+main{
+    padding: 0px 25px;
+}
+
 #paginas{
     display: flex;
     flex-direction: row;
@@ -42,27 +51,8 @@ header a {
 #paginas a{
     margin: 0px 10px;
 }
-#botoes{
-    margin: 0px 5px;
-}
-#cadastrar {
-    height: 40px;
-    width:  110px;
-    color: #fff;
-    background: var(--main-color);
-    border: 1px solid var(--main-color);
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-    border-radius: 6px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    margin: 0 10px;
-}
-main{
-    padding: 0px 25px
-    
-}
-.cabecalho{
+
+.sobreNos{
     text-align: center;
 }
 #sobre{
@@ -77,9 +67,10 @@ main{
     line-height: 60px;
 }
 #descricao{
-    width: 45%;
+    width: 50%;
     margin: 10px auto;
     line-height: 30px;
+    text-align: center;
 }
 .metricas-container{
     width: 100%;
@@ -91,6 +82,7 @@ main{
 .metricas{
     width:24%;
     padding: 10px 30px;
+    text-align: justify;
 }
 .metricas span{
     color: var(--main-color);
@@ -110,14 +102,7 @@ main{
     color: var(--text-color);
     letter-spacing: -0.02em;
 }
-.vagas {
-    text-align: center;
-}
-.vagas img {
-    height: 300px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);
-    margin: 10px;
-}
+
 #aviso {
     color: var(--main-color);
     background: rgba(142, 36, 36, 0.07);
@@ -125,6 +110,10 @@ main{
     border-radius: 10px;
     font-size: 16px;
     font-weight: 600;
+}
+
+.vagas {
+    text-align: center;
 }
 .vagas h3 {
     margin: 20px;
@@ -140,34 +129,137 @@ main{
     color: var(--text-color);
     margin: 10px 0 40px;
 }
-.vagas h4{
-    text-align:left;
-    margin: 30px 25%;
+
+.vagas-disponiveis{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
 }
 .desc-vagas{
     border: 1px solid #eaecf0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin: 20px 25%;
+    width: 120%;
+    margin: 10px 0;
     text-align: left;
     padding: 15px;
     border-radius: 16px
 }
-.titulo-vaga{
+.titulo-card{
     color: #101828;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 26px;
     font-weight: 500;
     margin-bottom: 20px;
 }
-.subtitulo-vaga{
+.subtitulo-card{
     color: var(--text-color);
     font-size: 16px;
     line-height: 24px;
 }
 .desc-vagas:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-        
+}
+.carrosel{
+    margin: 0px 0 25px;
+}
+.slide {
+    display: none;
+    justify-content: center;
+    align-items: center;
+} 
+.slide.ativo {
+    display: flex;
+}
+.carrosel img {
+    height: 300px;
+    box-shadow: 3px 5px 5px 3px rgba(31, 30, 30, 0.6);
+    margin: 10px;
+    width: 75vw;
+    object-fit: fill;
+}
+.categoria{
+    color: var(--main-color);
+}
+
+.produtos-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+}
+.info-produtos{
+    margin: 10px auto;
+    line-height: 30px;
+    text-align: center;
+    
+}
+.produtos-card{
+    border: 1px solid #c1c1c1;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: justify;
+    width: 75%;
+}
+.produtos-card-titulo{
+    font-weight: bold;
+    color: #8E2424;
+    font-size: 18px;
+}
+.produtos-card-subtitulo{
+    font-weight: 600;
+    line-height: 30px;
+    margin: 5px 0;
+}
+.produtos-card-desc{
+    font-weight: lighter;
+    color: var(--text-color);
+}
+footer {
+    background-color: #f1f1f1;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+footer i {
+    color: var(--main-color);
+}
+footer li {
+    margin: 10px 0;
+    list-style: none;
+}
+footer h3 {
+    color: var(--main-color);
+    margin-bottom: 5px;
+}
+#copy {
+    text-align: center;
+    font-size: 12px;
+}
+.footer_container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    padding: 20px;
+  }
+  
+.footer_title {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 10px;
+  }
+#botoes-nav{
+    display: flex;
+    flex-direction: column;
+    
+}
+#botoes-nav a {
+    text-decoration: none;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    font-size: 1rem;
 }

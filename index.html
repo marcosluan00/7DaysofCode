@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7 days of code</title>
+    <script src="https://kit.fontawesome.com/daede737be.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <header >
@@ -14,24 +16,18 @@
             <a href="#"> <img src="./src//assets//logo.png" alt="Logo"> OptimusTech </a>
         </div>
         <div id="paginas">
-            <a href="#"> Home </a>
-            <a href="#"> Produtos </a>
-            <a href="#"> Recursos </a>
-            <a href="#"> Sobre nós </a>
-        </div>
-        <div id="botoes">
-            <a href="./pages/Login">Entrar</a>
-            <button id="cadastrar">
-                Cadastrar
-            </button>
+            <a href="#sobreNos"> Sobre nós </a>
+            <a href="#produtos"> Produtos </a>
+            <a href="#vagas"> Vagas </a>
         </div>
     </div>
     </header>
     <main>
-        <div class="cabecalho">
+        <div class="sobreNos" id="sobreNos">
             <span id="sobre">Sobre nós</span>
             <h1 id="titulo">Por que somos diferentes ?</h1>
-            <p id="descricao">Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas
+            <p id="descricao">Na OptimusTech, estamos focados em impulsionar o sucesso dos nossos clientes por meio de soluções de desenvolvimento sob medida e 
+                consultoria especializada. Nós focamos nos detalhes de tudo que fazemos, tudo para ajudar as empresas
                 de todo mundo a se concentrarem naquilo que é realmente importante para elas
             </p>
         </div>
@@ -69,7 +65,51 @@
                 <p>Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</p>
             </div>
     </section>
-        <section class="vagas">
+        <section class="carrosel">
+            
+                <div class="slide"><img src="./src/assets/Image.png" alt="Pessoas em uma mesa"></div>
+                <div class="slide"><img src="./src/assets/uiux.jpg" alt="Prototipagem"></div>  
+                <div class="slide"><img src="./src/assets/code.jpg" alt="Codigo"></div>
+            
+        </section>
+
+        <section class="produtos-container" id="produtos">
+            <span id="aviso">
+                    Nossos Produtos !!
+            </span>
+            <div class="info-produtos">
+                <h3>Nossos produtos são cuidadosamente desenvolvidos para impulsionar o potencial do seu negócio,
+                    fornecendo soluções tecnológicas inovadoras e consultoria especializada.</h3>
+            </div>
+            <div class="catalogo-produtos">
+                <div class="produtos-card">
+                    <span class="produtos-card-titulo"> OptiStream </span>
+                    <h3 class="produtos-card-subtitulo"> O "OptiStream" é uma solução de otimização tecnológica desenvolvida para maximizar o desempenho dos seus sistemas e processos.</h3>
+                    <p class="produtos-card-desc">Com análises abrangentes, identificamos áreas de melhoria e implementamos estratégias 
+                    eficientes para otimizar sua infraestrutura tecnológica, resultando em maior produtividade e 
+                    redução de custos.</p>
+                </div>
+                </div> 
+                <div class="produtos-card">
+                    <span class="produtos-card-titulo">CyberShield</span>
+                    <h3 class="produtos-card-subtitulo"> "CyberShield" é uma solução avançada de segurança cibernética projetada para proteger os dados sensíveis do seu negócio contra ameaças online.</h4>
+                    <p class="produtos-card-desc">Com recursos robustos de detecção e prevenção de intrusões, criptografia e monitoramento em 
+                    tempo real, o "DataGuard" garante a integridade e confidencialidade dos seus dados, proporcionando 
+                    tranquilidade e conformidade com as regulamentações de privacidade.</p>
+                </div>
+                <div class="produtos-card">
+                    <span class="produtos-card-titulo">InnoTechAI</span>
+                    <h3 class="produtos-card-subtitulo"> "InnoTechAI" é uma plataforma de inteligência artificial que impulsiona a inovação e a eficiência dos seus processos de negócios.</h4>
+                    <p class="produtos-card-desc"> Utilizando algoritmos avançados de aprendizado de máquina, o "InnoTechAI" automatiza 
+                    tarefas, analisa dados complexos e fornece insights acionáveis para tomar decisões 
+                    estratégicas embasadas em dados, impulsionando o crescimento e a competitividade da sua 
+                    empresa.</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="vagas" id="vagas">
             <span id="aviso">
                     Vagas abertas!
             </span>
@@ -79,37 +119,69 @@
             <p>
                 Somos uma equipe 100% remotas com pessoas do brasil inteiro
             </p>
-            <img src="./src//assets/Image.png" alt="Pessoas Felizes">
 
-            <h4>Design</h4>
-
-            <div class="desc-vagas">
-                <span class="titulo-vaga">Product Designer</span>
-                <span class="subtitulo-vaga"> Full-time - Faixa salarial: R$7.000</span>
-            </div>
-            <div class="desc-vagas">
-                <span class="titulo-vaga">UX Designer</span>
-                <span class="subtitulo-vaga"> Full-time - Faixa salarial: R$6.000</span>
-            </div>
-
-            <h4>Desenvolvimento de Software</h4>
-            <div class="desc-vagas">
-                <span class="titulo-vaga">Desenvolvedor(a) iOS</span>
-                <span class="subtitulo-vaga"> Full-time - Faixa salarial: R$8.000</span>
-            </div>
-            <div class="desc-vagas">
-                <span class="titulo-vaga">Desenvolvedor(a) Front-end</span>
-                <span class="subtitulo-vaga"> Full-time - Faixa salarial: R$7.000</span>
-            </div>
-            <div class="desc-vagas">
-                <span class="titulo-vaga">Desenvolvedor(a) Back-end</span>
-                <span class="subtitulo-vaga"> Full-time - Faixa salarial: R$8.000</span>
+            <section class="vagas-disponiveis">
+            <div class="cards">
+                <div class="categoria"> <h4>Design</h4> </div>
+                <div class="desc-vagas">
+                    <span class="titulo-card">Product Designer</span>
+                    <span class="subtitulo-card"> Full-time - Faixa salarial: R$7.000</span>
+                </div>
+                <div class="desc-vagas">
+                    <span class="titulo-card">UX Designer</span>
+                    <span class="subtitulo-card"> Full-time - Faixa salarial: R$6.000</span>
+                </div>
             </div>
 
+            <div class="cards">
+                <div class="categoria"> <h4>Desenvolvimento de Software </h4></div>
+                <div class="desc-vagas">
+                    <span class="titulo-card">Desenvolvedor(a) iOS</span>
+                    <span class="subtitulo-card"> Full-time - Faixa salarial: R$8.000</span>
+                </div>
+                <div class="desc-vagas">
+                    <span class="titulo-card">Desenvolvedor(a) Front-end</span>
+                    <span class="subtitulo-card"> Full-time - Faixa salarial: R$7.000</span>
+                </div>
+                <div class="desc-vagas">
+                    <span class="titulo-card">Desenvolvedor(a) Back-end</span>
+                    <span class="subtitulo-card"> Full-time - Faixa salarial: R$8.000</span>
+                </div>
+                </div>  
+                <div class="cards">
+                    <div class="categoria"><h4>Especialista em SEO</h4></div>
+                    <div class="desc-vagas">
+                        <span class="titulo-card">Especialista em SEO</span>
+                        <span class="subtitulo-card"> Full-time - Faixa salarial: R$5.000</span>
+                    </div>
+                </div>
 
-
+            </section>
         </section>
     </main>
-    
+    <footer>
+        <div class="footer_container">
+            <div id="botoes-nav">
+                <a href="#sobreNos"> Sobre nós </a>
+                <a href="#produtos"> Produtos </a>
+                <a href="#vagas"> Vagas </a>
+            </div>
+            <section class="footer_title">
+                <h3>Sobre</h3>
+                <p>Lading Page simples de página única</p>
+            </section>
+            <address>
+                <h3 class="footer_title">Contato</h3>
+                <ul>
+                  <li><i class="fa-solid fa-envelope"></i> Email@email.com</li>
+                  <li><i class="fa-solid fa-phone"></i> (95) 91234-1234</li>
+                  <li><i class="fa-brands fa-whatsapp"></i> (95) 91234-1234</li>
+                </ul>
+              </address>
+        </div>
+
+        <p id="copy">&copy; 2023 Marcos Damasceno. Todos os direitos reservados.</p>
+    </footer>
+    <script src="carroselScript.js"></script>
 </body>
 </html>
